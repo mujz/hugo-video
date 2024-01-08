@@ -1,0 +1,7 @@
+<!-- You must include this partial in your theme -->
+{{ if in .RawContent "{{<video" }}
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+  <script type="text/javascript" defer>
+    lozad(document.querySelectorAll('video')).observe()
+  </script>
+{{ end }}
